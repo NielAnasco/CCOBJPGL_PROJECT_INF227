@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="438.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceiptController">
+   <children>
+      <ImageView fitHeight="86.0" fitWidth="188.0" layoutX="126.0" layoutY="9.0">
+         <image>
+            <Image url="@../images/LOGO.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="154.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AMUNNATION, MNL">
+         <font>
+            <Font name="Copperplate Gothic Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="143 Quiapo St.">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manila, PH 6942 ">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="170.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1-749-988-2763">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="29.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------------------------" wrappingWidth="382.25390625">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="236.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="319.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QTY        Item Name">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="---------------------------------------------------">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total to pay:">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="total" alignment="CENTER" layoutX="256.0" layoutY="434.0" prefHeight="15.0" prefWidth="130.0" style="-fx-background-color: #fff; -fx-background-radius: 5;">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Label>
+      <Text layoutX="33.0" layoutY="472.0" strokeType="OUTSIDE" strokeWidth="0.0" text="---------------------------------------------------">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="130.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store closes at 8 pm ">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="62.0" layoutY="592.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank you for shopping. Please come again.">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="==============================================">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date: 06/23/2023  9:00 AM">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="35.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staff: Jose Manalo">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="266.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Slip: 69420123">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="266.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trans: 386970">
+         <font>
+            <Font name="Monospaced Regular" size="12.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="111.0" fitWidth="132.0" layoutX="139.0" layoutY="606.0">
+         <image>
+            <Image url="@../images/Barcode.png.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="29.0" layoutY="198.0" prefHeight="212.0" prefWidth="382.0">
+         <content>
+            <VBox prefHeight="331.0" prefWidth="367.0">
+               <children>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty1" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product1" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="122.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount1" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price1" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty2" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product2" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount2" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price2" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty3" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product3" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount3" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price3" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty4" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product4" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount4" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price4" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty5" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product5" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount5" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price5" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty6" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="14.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product6" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount6" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price6" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty7" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="14.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product7" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount7" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price7" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty8" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product8" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="122.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount8" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price8" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty9" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="14.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product9" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="122.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount9" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price9" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty10" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product10" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount10" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price10" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty11" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="15.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product11" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="123.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount11" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price11" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Pane prefHeight="32.0" prefWidth="369.0">
+                           <children>
+                              <Label fx:id="qty12" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="8.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                              <Label fx:id="product12" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="122.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                              <Label fx:id="amount12" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                              <Label fx:id="price12" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty13" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product13" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="122.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount13" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price13" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty14" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product14" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="122.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount14" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price14" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="qty15" layoutX="5.0" layoutY="6.0" prefHeight="17.0" prefWidth="13.0" style="-fx-background-color: #fff; -fx-background-radius: 5;" />
+                        <Label fx:id="product15" alignment="CENTER" layoutX="54.0" layoutY="6.0" prefHeight="17.0" prefWidth="122.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="amount15" alignment="CENTER" layoutX="283.0" layoutY="6.0" prefHeight="17.0" prefWidth="62.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                        <Label fx:id="price15" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="6.0" prefHeight="17.0" prefWidth="65.0" style="-fx-background-color: #fff; -fx-background-radius: 10;" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
