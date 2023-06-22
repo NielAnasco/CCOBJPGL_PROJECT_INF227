@@ -16,7 +16,7 @@
    <children>
       <ImageView fitHeight="717.0" fitWidth="1224.0" layoutX="-31.0" layoutY="-32.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../images/weaponbg.gif" />
+            <Image url="@../images/checkoutbg.gif" />
          </image>
       </ImageView>
       <ScrollPane layoutX="17.0" layoutY="56.0" prefHeight="582.0" prefWidth="816.0">
